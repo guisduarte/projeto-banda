@@ -1,0 +1,92 @@
+@import url(reset.css);
+@import url(Styles/home.css);
+@import url(Styles/shows.css);
+@import url(Styles/contato.css);
+
+body{
+    background-color: var(--cor-de-fundo);
+}
+
+:root {
+    --amarelo-principal: #ffc107;
+    --preto:#343A40;
+    --cor-de-fundo: #4D4F50;
+    --branco: #FFFFFF;
+    --destaque-tabela: #17a2b8;
+}
+
+/*CSS do Cabeçalho*/
+
+.cabecalho{
+    display: flex;    
+    justify-content: space-between;
+    background-color: var(--preto);
+    align-items:center;   
+}
+
+.cabecalho > h1{
+    display: flex;    
+    margin: 1rem 2rem 2rem 2rem;
+    color: var(--amarelo-principal);
+    font-size: 2em;
+}
+
+.menu > ul{
+    display: flex;    
+    margin: 1rem 5rem 2rem 2rem;
+    color: var(--branco);
+    font-size: 1.5em;
+}
+
+.menu >ul >li > a{
+    color: var(--branco);
+    text-decoration: none;
+    padding-left: 1.5rem;    
+}
+
+.menu >ul >li > a:hover{
+    color: var(--amarelo-principal);
+}
+
+/*CSS do Rodapé*/
+
+footer{
+    background-color: var(--preto);
+    margin-top: 30px;
+    color: var(--branco);
+}
+
+.container-rodape{
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+.caixa{
+    width: 350px;
+    text-align: center;    
+}
+
+.rodape-contato{
+    line-height: 16px;
+}
+.rodape-endereco{
+    line-height: 20px;
+}
+
+.rodape-sociais{
+    margin-right: 50px;
+}
+
+.rodape-sociais >a > img{
+    margin-bottom: 40px;
+}
+
+.rodape-titulo{
+    font-size: 19px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+

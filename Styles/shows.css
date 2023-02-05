@@ -1,0 +1,53 @@
+*::after, ::before {
+    box-sizing: border-box;
+}
+
+main{
+    min-height: 60vh;
+}
+.titulo-tabela{
+    color: var(--amarelo-principal);
+    font-size: 2rem;
+    margin: 0.60rem 0 0.5rem 10rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+}
+
+table{
+      
+    width: 62.0em;
+    height: 16.0em;   
+    border: 1px solid var(--branco);
+    color: yellow;
+    text-align: center;
+    margin-left: 10em;    
+}
+
+thead{
+    font-size: 18px;
+    font-weight: bold;
+}    
+
+.dias{
+    border:1px solid var(--branco);
+    border-bottom: 2px solid var(--branco);
+    padding: 10px;
+}
+
+tr,td{
+    border:1px solid var(--branco);
+
+}
+
+.data{
+    padding: 15px;
+}
+
+.outra-data{
+    color:lightslategrey;
+}
+
+.destaque{
+    background-color: var(--destaque-tabela);
+}
