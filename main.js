@@ -1,11 +1,13 @@
-
 const botao = document.querySelectorAll(".btn");
-const texto = document.querySelectorAll(".card-texto-2");
+const texto = document.querySelectorAll(".card-texto>span");
 
 // Utilizando o método forEach.
 botao.forEach((btn, i) => {
+  btn.innerHTML = "Mostrar Mais";
+  texto[i].style.display = "none";
+  
     btn.addEventListener("click", function() {
-      if (texto[i].style.display === "none" || btn.innerHTML === "Mostrar Mais") {
+      if (texto[i].style.display === "none" && btn.innerHTML === "Mostrar Mais") {
         texto[i].style.display = "flex";
         btn.innerHTML = "Mostrar Menos";
       } else {
@@ -15,16 +17,20 @@ botao.forEach((btn, i) => {
     });
   });
 
-  // Com um Loop de repetição For.
+  // Com estrutura de repetição For.
 /*
-    for(let i = 0; i < botao.length; i++){
+    for(let i = 0; i < botao.length; i++){   
+      botao[i].innerHTML = "Mostrar Mais";
+      texto[i].style.display = "none";
+
         botao[i].addEventListener("click", function() {
-            if(texto[i].style.display === 'none' || botao[i].innerHTML === "Mostrar Mais"){
-                texto[i].style.display = 'flex'; botao[i].innerHTML = "Mostrar Menos"
-            }else{
-                texto[i].style.display = 'none'; botao[i].innerHTML = "Mostrar Mais"
+            if(texto[i].style.display === 'none' && botao[i].innerHTML === "Mostrar Mais") {
+                texto[i].style.display = 'flex'; 
+                botao[i].innerHTML = "Mostrar Menos";
+            }else {
+                texto[i].style.display = 'none'; 
+                botao[i].innerHTML = "Mostrar Mais";
             }
         })
     } 
 */
-

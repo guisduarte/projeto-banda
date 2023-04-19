@@ -89,7 +89,7 @@
     line-height: 22px;
 }
 
-.card-texto-2{
+.card-texto > span{
     width: 350px;
     display: none;    
     position: absolute;
