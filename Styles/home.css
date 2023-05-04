@@ -23,8 +23,8 @@
 .container{
     padding-right: 15px;
     padding-left: 15px;
-    margin-right: 100.500px;
-    margin-left: 100.500px;
+    margin-right: 6.281rem;
+    margin-left: 6.281rem;
 }
 
 .titulo-secundario{
@@ -59,18 +59,16 @@
 }
 
 .card{
-    width: 360px;
-    height: 580px;
-    margin: 20px 0px 0 0;
+    width: 22.5rem;
+    height: 36.25rem;
+    margin: 20px 0px;
     background-color: var(--preto);
     border-radius: 5px;
-    
-    
 }
 
 .imagem-card{
     width: 100%;
-    height: 240px;    
+    height: 15rem;    
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5px;    
@@ -92,18 +90,15 @@
 }
 
 .card-texto > span{
-    width: 350px;
-    display: none;    
+    width: 21.875rem;       
     position: absolute;
-
 }
 
 .card-footer{
-    width: 360px;
-    height: 50px;    
+    width: 100%;
+    min-height: 3.125rem;
     border-top: 1px solid rgba(0,0,0,.125);
-    margin-top: 110px;
-    
+    margin-top: 6.875rem;    
 }
 
 .btn{
@@ -118,6 +113,7 @@
     background-color: var(--amarelo-principal);    
     border-radius: 5px;
     cursor: pointer;
+
 }
 
 .card1{
@@ -149,9 +145,13 @@
     .texto-banner {
         font-size: 3rem;
     }
+
+    .card {
+        margin: 20px 10px ;
+    }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 990px) {
     /* Banner */
     .texto-banner {
         font-size: 2.5rem;
@@ -170,7 +170,7 @@
 
     /* Container Principal */
     .container {
-        margin: 0;
+        margin: 0;        
     }
 
 }
@@ -188,5 +188,17 @@
     /* Parágrafo História da banda */
     .paragrafo-home {
         font-size: 1.2rem;
+    }
+
+    .card {
+        min-height: 43rem;
+    }
+
+    .card-texto span {
+        max-width: 15rem;
+    }
+
+    .card-footer {
+        margin-top: 10rem;
     }
 }
