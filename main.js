@@ -34,3 +34,23 @@ botao.forEach((btn, i) => {
         })
     } 
 */
+
+// Menu Hamburguer
+
+const btnHamburguer = document.querySelector(".menu-hamburguer");
+const menuEscondido = document.querySelector(".menu-escondido");
+
+menuEscondido.style.display = "none";
+
+
+btnHamburguer.addEventListener("click", () => {
+  if (menuEscondido.style.display === "none" ) {
+    menuEscondido.style.display = "block";
+    btnHamburguer.style.backgroundColor = "var(--destaque-tabela)";
+  } else {
+    menuEscondido.style.display = "none";
+    btnHamburguer.style.backgroundColor = "";
+  }
+
+} ) 
+

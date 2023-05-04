@@ -4,7 +4,9 @@
     background-image: url(../img/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 48vw;
+    min-height: 100vh;
+    max-width: 100vw;
+    position: relative;
 }
 
 .texto-banner{
@@ -140,4 +142,51 @@
 
 .card6{
     background-image: url(../img/tecladista.jpg); 
+}
+
+ @media (max-width: 1240px) {
+    /* Banner */
+    .texto-banner {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 920px) {
+    /* Banner */
+    .texto-banner {
+        font-size: 2.5rem;
+    }
+
+    .container-card {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Banner */
+    .texto-banner {
+        display: grid;      
+    }
+
+    /* Container Principal */
+    .container {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 425px) {
+    /* Banner */
+    .texto-banner {
+        font-size: 2rem;
+        margin: 0 1.2rem;      
+    }  
+
+}
+
+@media (max-width: 375px) {
+    /* Parágrafo História da banda */
+    .paragrafo-home {
+        font-size: 1.2rem;
+    }
 }

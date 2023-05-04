@@ -1,0 +1,82 @@
+
+/*CSS do Cabeçalho*/
+
+.cabecalho{
+    display: flex;    
+    justify-content: space-between;
+    background-color: var(--preto);
+    align-items:center;   
+}
+
+.cabecalho > h1{
+    display: flex;    
+    margin: 1rem 2rem 2rem 2rem;
+    color: var(--amarelo-principal);
+    font-size: 2em;
+}
+
+.menu > ul,
+.menu-escondido > ul{   
+    margin: 1rem 5rem 2rem 2rem;
+    color: var(--branco);
+    font-size: 1.5em;
+}
+
+.menu > ul {
+    display: flex;
+}
+
+.menu > ul > li > a,
+.menu-escondido >ul> li> a {    
+    color: var(--branco);
+    text-decoration: none;
+    padding-left: 1.5rem;    
+}
+
+.menu > ul > li > a:hover,
+.menu-escondido > ul > li > a:hover{
+    color: var(--amarelo-principal);
+}
+
+.menu-escondido {
+    width: 300px;
+    height: 200px;
+    background-color: var(--preto);
+    position: absolute;
+}
+
+.menu-escondido > ul > li {
+    margin-top: 20px;
+}
+
+.menu-hamburguer {
+    background-color: var(--cor-de-fundo);
+    display: none;
+} 
+
+
+@media (max-width: 720px) {
+    .cabecalho > h1 {       
+        padding-left: 2rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-hamburguer {
+        display:  block ;
+        position: absolute;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 375px) {
+    .cabecalho {
+        min-width: 100vw;
+    }
+
+    .cabecalho > h1 {       
+        font-size: 1.5rem;
+    }
+}

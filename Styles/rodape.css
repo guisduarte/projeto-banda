@@ -1,0 +1,48 @@
+/*CSS do Rodapé*/
+
+footer{
+    background-color: var(--preto);
+    margin-top: 30px;
+    color: var(--branco);
+}
+
+.container-rodape{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.caixa{
+    width: 350px;
+    text-align: center;    
+}
+
+.rodape-contato{
+    line-height: 16px;
+}
+.rodape-endereco{
+    line-height: 20px;
+}
+
+.rodape-sociais{
+    margin-right: 50px;
+}
+
+.rodape-sociais >a > img{
+    margin-bottom: 40px;
+}
+
+.rodape-titulo{
+    font-size: 19px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+ @media (max-width: 768px) {
+    .container-rodape {        
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    } 
+
+}
